@@ -1,0 +1,226 @@
+<section class="slide-transition">
+    <h1>Responsive Visualization Patterns</h1>
+</section>
+
+
+
+<section class="slide-patterns-overview">
+<h1>Presented Patterns</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>Visual Patterns:
+            <ul>
+                <li>V1: Scaling whole chart down</li>
+                <li>V2: Repositioning element labels</li>
+                <li>V3: Using tooltips and hiding element labels</li>
+                <li>V4: Rotating axis labels</li>
+                <li>V5: Reformatting labels and shortening titles</li>
+                <li>V6: Scaling labels between minimal and maximal tolerances</li>
+                <li>V7: Scaling down visualization in one dimension</li>
+                <li>V8: Removing categories, dimensions, elements and axis labels</li>
+                <li>V9: Swapping data dimensions</li>
+                <li>V10: Swapping whole visualization</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>Interaction Patterns:
+            <ul>
+                <li>I1: Adding control elements</li>
+                <li>I2: Offering selection of visible categories, records and dimensions</li>
+                <li>I3: Add Zooming</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>Data Patterns:
+            <ul></ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v1">
+<h1>V1: Scaling whole chart down</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Most straightforward and easiest solution</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Components become unreadable if used too excessively</li>
+                <li>Uni directional scaling eventually leads to unacceptable distortions of visualization</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v2">
+<h1>V2: Repositioning Element Labels</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Can solve cumbersome clutter and intersection problems</li>
+                <li>CSS technologies or responsive visualization tools often allow realignment of whole groups of labels</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Adding too many single exceptions for repositioning can get cumbersome</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v3">
+<h1>V3: Using Tooltips and Hiding Element Labels</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Saves space on devices which narrow screen sizes</li>
+                <li>Intersection and clutter of labels not possible anymore</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>User may overlook possibility of displaying tooltips</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v4">
+<h1>V4: Rotating Axis Labels</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Prevents clutter and intersection of horizontal axis labels</li>
+                <li>Preserves original information of horizontal axis labels</li>
+                <li>Rotation of vertical axis labels saves space in horizontal direction</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Readability of axis labels decreases as natural reading direction is not considered</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v5">
+<h1>V5: Reformatting Titles and Labels</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Prevents clutter and intersections</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Readability of labels highly dependent on used format and user</li>
+                <li>Shortening of labels can lead to information loss</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v6">
+<h1>V6: Scaling Labels between minimal and maximal Tolerances</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Overall aesthetics of visualization improve if font size is in relation to visualization size</li>
+                <li>Reduces risk of clutter and intersections</li>
+                <li>Tolerance values prevent extraordinary small or large font sizes</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Fluid Transition between labels not exactly predictable and requires testing</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v7">
+<h1>V7: Scaling down visualization in one dimension</h1>
+<div class="flex-cols-container">
+    <ul class="flex-cols-col">
+        <li>
+            Advantages:
+            <ul>
+                <li>Overall aesthetics of visualization improve if font size is in relation to visualization size</li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="flex-cols-col">
+        <li>
+            Disadvantages:
+            <ul>
+                <li>Fluid Transition between labels not exactly predictable and requires testing</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+
+
+<section class="slides-v5"></section>
+<section class="slides-v6"></section>
+<section class="slides-v7"></section>
+<section class="slides-v8"></section>
+<section class="slides-v9"></section>
+<section class="slides-v10"></section>

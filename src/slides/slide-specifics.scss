@@ -1,0 +1,43 @@
+.slide-title {}
+
+.slide-resp-vis {}
+
+.slide-mobile-web {}
+
+.slide-resp-vis-important {}
+
+.slide-resp-web {}
+
+.slide-modern-css {}
+
+.slide-approaches-resp-vis {}
+
+
+
+
+.slide-transition.slide {
+  //background-color: #0000;
+  background-image: linear-gradient(#fff 0%, gray 100%);
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    padding: 0;
+  }
+}
+
+.slide-resources {}
+
+.slide-references {}
+
+
+

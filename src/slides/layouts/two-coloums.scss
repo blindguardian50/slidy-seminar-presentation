@@ -1,0 +1,15 @@
+.gird-two-coloums {
+  display: grid;
+  width: 100%;
+}
+
+.gird-two-coloums-1-1 { grid-template-columns: 1fr 1fr; }
+.gird-two-coloums-125-1 { grid-template-columns: 1.25fr 1fr; }
+.gird-two-coloums-150-1 { grid-template-columns: 1.5fr 1fr; }
+.gird-two-coloums-175-1 { grid-template-columns: 1.75fr 1fr; }
+.gird-two-coloums-2-1 { grid-template-columns: 2fr 1fr; }
+
+.gird-two-coloums-1-125 { grid-template-columns: 1fr 1.25fr; }
+.gird-two-coloums-1-150 { grid-template-columns: 1fr 1.5fr; }
+.gird-two-coloums-1-175 { grid-template-columns: 1fr 1.75fr; }
+.gird-two-coloums-1-2 { grid-template-columns: 1fr 2fr; }
