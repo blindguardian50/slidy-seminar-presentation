@@ -44,6 +44,13 @@
 
 <section class="slides-v1">
 <h1>V1: Scaling whole chart down</h1>
+<ul>
+    <li>Chart is scaled down to fit parent container as is without any additional transformations being applied</li>
+    <li>For web-based visualizations:
+        <ul><li>Giving chart container relative width to parent container</li></ul>
+    </li>
+
+</ul>
 <div class="flex-cols-container">
     <ul class="flex-cols-col">
         <li>
@@ -69,6 +76,16 @@
 
 <section class="slides-v2">
 <h1>V2: Repositioning Element Labels</h1>
+<ul>
+    <li>During development visualization is inspected and labels adjusted for different visualization widths.</li>
+    <li>For web-based visualizations:
+        <ul>
+            <li>Media queries</li>
+            <li>Size container queries</li>
+            <li>CSS rotate and translate properties</li>
+        </ul>
+    </li>
+</ul>
 <div class="flex-cols-container">
     <ul class="flex-cols-col">
         <li>
@@ -94,6 +111,15 @@
 
 <section class="slides-v3">
 <h1>V3: Using Tooltips and Hiding Element Labels</h1>
+<ul>
+    <li>Labels of elements are hidden either for specific visualization widths or in general.</li>
+    <li>Interaction with control elements or visualization elements directly triggers tooltips becoming visible</li>
+    <li>For web-based visualizations:
+        <ul>
+            <li>CSS hover pseudo selector (works via touch interactions on mobile devices)</li>
+        </ul>
+    </li>
+</ul>
 <div class="flex-cols-container">
     <ul class="flex-cols-col">
         <li>
@@ -119,6 +145,15 @@
 
 <section class="slides-v4">
 <h1>V4: Rotating Axis Labels</h1>
+<ul>
+    <li>Rotate labels of horizontal and/or vertical axis as visualization gets narrower</li>
+    <li>For web-based visualizations:
+        <ul>
+            <li>JavaScript Event Listener and algorithm for detecting appropriate angle</li>
+            <li>Application of rotation via CSS rotate property</li>
+        </ul>
+    </li>
+</ul>
 <div class="flex-cols-container">
     <ul class="flex-cols-col">
         <li>
@@ -145,6 +180,23 @@
 
 <section class="slides-v5">
 <h1>V5: Reformatting Titles and Labels</h1>
+<ul>
+    <li>Use well-known formats to shorten labels and titles</li>
+    <li>Well-known formats:
+        <ul>
+            <li>Numbers: 2.000 = 2k, 2.000.000 = 2M, etc.</li>
+            <li>Dates: January 1st 2024 = 01-01-2024 ~ 01-2024 ~ 01-24</li>
+            <li>Geographic locations: United States of America = USA</li>
+            <li>Organization names: Web Consortium Cascading Style Sheets Working Group = W3C CSS WG</li>
+        </ul>
+    </li>
+    <li>Reformulate titles if no format exists</li>
+    <li>For web-based visualizations:
+        <ul>
+            <li>Responsive visualization tools often provide configuration options for formatting labels</li>
+        </ul>
+    </li>
+</ul>
 <div class="flex-cols-container">
     <ul class="flex-cols-col">
         <li>
