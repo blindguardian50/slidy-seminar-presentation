@@ -1,39 +1,7 @@
-.figure-whole, .figure-half {
-    display: grid;
-    height: 90%;
-    width: 90%;
-    grid-template-columns: 1fr 100% 1fr;
-    grid-template-rows: 1fr auto auto 1fr;
-    grid-template-areas: '. . .'
-                         '. chart .'
-                         '. caption .'
-                         '. . .';
-    transition: width 1.5s ease-in-out;
-}
-
-.figure-half {
-    width: 50%;
-}
-
 .column-wide {
     display: flex;
     align-items: start;
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
-}
-
-.svg-wrapper-whole {
-    max-height: 75vh;
-    transition: height 1.5s ease-in-out;
-    grid-area: chart;
-}
-
-.svg-wrapper-whole svg {
-    margin: 0 auto;
-    max-height: 100%;
-}
-
-figcaption {
-    grid-area: caption;
 }
