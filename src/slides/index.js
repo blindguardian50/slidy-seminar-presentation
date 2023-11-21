@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mergeDocument()
     addClickResizing('#grouped_bar_full_width', () => resizeElement('#grouped_bar_full_width_figure', '30%', '90%'))
     addClickResizing('#iframe-example1-resizer', () => resizeElement('#iframe-example1-figure', '30%', '90%'))
+
     addClickResizing('#iframe-example2-resizer', () => resizeElement('#iframe-example2-figure', '30%', '90%'))
     addRangeResizing('#iframe-example2-range-resizer', (e) => resizeElement('#iframe-example2-figure', e.currentTarget.value + '%', e.currentTarget.value + '%'))
+
+    addRangeResizing('#iframe-tool1-range-resizer', (e) => resizeElement('#iframe-tool1', e.currentTarget.value + '%', e.currentTarget.value + '%'))
+
+    addRangeResizing('#iframe-tool2-range-resizer', (e) => resizeElement('#iframe-tool2', e.currentTarget.value + '%', e.currentTarget.value + '%'))
 });
