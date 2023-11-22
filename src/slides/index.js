@@ -49,4 +49,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     addRangeResizing('#iframe-tool1-range-resizer', (e) => resizeElement('#iframe-tool1', e.currentTarget.value + '%', e.currentTarget.value + '%'))
 
     addRangeResizing('#iframe-tool2-range-resizer', (e) => resizeElement('#iframe-tool2', e.currentTarget.value + '%', e.currentTarget.value + '%'))
+
+    addRangeResizing('#iframe-tool3-range-resizer', (e) => resizeElement('#iframe-tool3', e.currentTarget.value + '%', e.currentTarget.value + '%'))
+
+    addRangeResizing('#iframe-tool4-range-resizer', (e) => resizeElement('#iframe-tool4', e.currentTarget.value + '%', e.currentTarget.value + '%'))
 });
