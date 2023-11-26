@@ -43,7 +43,7 @@ figcaption {
                          '. caption .'
                          '. . .';
   transition: width 1.5s ease-in-out;
-  iframe {
+  iframe, .chart {
     width: 100%;
     height: 100%;
     transition: height 1.5s ease-in-out, width 1.5s ease-in-out;
