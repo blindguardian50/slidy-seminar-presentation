@@ -5,6 +5,7 @@ import ToolsSlides from 'bundle-text:../slides/tools/tools.html'
 import OutroSlides from 'bundle-text:../slides/outro/outro.html'
 import GroupedBarWide from 'bundle-text:../images/grouped_bar_wide.svg'
 import {loadMultiLineChart} from "./examples/charts/electric-power-consumption/electric-power-consumption";
+import {loadStackedBarChart} from "./examples/charts/market-shares/market-shares-chart";
 
 function addHTML(selector, html) {
     const container = document.querySelector(selector)
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mergeDocument()
 
     loadMultiLineChart('#electric-power-consumption')
+    loadStackedBarChart('#market-shares-chart')
 
 
     addClickResizing('#grouped_bar_full_width', () => resizeElement('#grouped_bar_full_width_figure', '30%', '90%'))

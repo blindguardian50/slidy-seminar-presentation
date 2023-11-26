@@ -9,7 +9,8 @@ export function chooseResponsiveData(data, element) {
     const index = findMatchingBoundsIndex(element, responsiveData)
     switch (index) {
         case 0: case 1: data.title = 'Browser Share'; break
-        default:
+        default: data.title = "Market Share of Browsers"
+
     }
     switch (index) {
         case 0: case 1: data.legend.title = ''; break
@@ -17,6 +18,6 @@ export function chooseResponsiveData(data, element) {
     }
     switch (index) {
         case 0: data.flipped = true; break
-        default:
+        default: data.flipped = false;
     }
 }

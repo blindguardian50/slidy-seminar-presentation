@@ -13,7 +13,6 @@ const shares = desktop.map((d, i) => [desktop[i], phone[i], tablet[i]]);
 
 const calcData = () => { //data for sufficient space
     return {
-        title: "Market Share of Browsers",
         categoryEntity: 'Year',
         categories: years,
         values: shares,
@@ -31,7 +30,6 @@ const calcData = () => { //data for sufficient space
             )}%`,
         xAxis: {
             title: 'Year',
-            configureAxis: (a) => a.tickFormat((v) => v)
         },
         yAxis: {
             title: 'Market Share',
@@ -42,21 +40,23 @@ const calcData = () => { //data for sufficient space
 
 const data = calcData()
 
-const chartWindow = d3
-    .select('#market-shares-chart')
-    .append('div')
-    .datum(chartWindowBarStackedData(data))
-    .call(chartWindowBarStackedRender)
-    .call(chartWindowBarStackedAutoFilterCategories(data))
-    .call(chartWindowBarStackedAutoFilterSubcategories(data))
-    .on('resize', function (e, d) {
-        chooseResponsiveData(d, e.target)
+export function loadStackedBarChart(selector) {
+    const chart = d3
+        .select(selector)
+        .append('div')
+        .datum(chartWindowBarStackedData(data))
+        .call(chartWindowBarStackedRender)
+        .call(chartWindowBarStackedAutoFilterCategories(data))
+        .call(chartWindowBarStackedAutoFilterSubcategories(data))
+        .on('resize', function (e, d) {
+            chooseResponsiveData(d, e.target)
 
-        const xAxisE = d3.select('#market-shares-chart').select('.axis-x').node()
-        chooseAxisFormat(xAxisE, d)
+            const xAxisE = d3.select(selector).select('.axis-x').node()
+            chooseAxisFormat(xAxisE, d)
 
-        chartWindow.datum(chartWindowBarStackedData(d)).call(chartWindowBarStackedRender);
-    });
+            chart.datum(chartWindowBarStackedData(d)).call(chartWindowBarStackedRender);
+        });
+}
 
 /*
 * chart Orientation:
