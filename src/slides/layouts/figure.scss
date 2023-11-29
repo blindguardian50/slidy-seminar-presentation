@@ -15,21 +15,26 @@
   width: 50%;
 }
 
-.svg-wrapper-whole {
+.svg-wrapper-whole, .figure-whole-content-wrapper {
   max-height: 75vh;
+  text-align: center;
   transition: height 1.5s ease-in-out;
   grid-area: chart;
 }
 
-.svg-wrapper-whole svg {
+.svg-wrapper-whole svg, .figure-whole-content-wrapper svg {
   margin: 0 auto;
   max-height: 100%;
+}
+
+.figure-whole-content-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 figcaption {
   grid-area: caption;
 }
-
 
 
 .figure-whole-iframe {

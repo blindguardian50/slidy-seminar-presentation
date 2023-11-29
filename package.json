@@ -16,7 +16,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "run-script-os": "^1.1.6"
+    "run-script-os": "^1.1.6",
+    "chart.js": "^4.3.3",
+    "chartjs-plugin-datalabels": "^2.2.0"
   },
   "devDependencies": {
     "@parcel/optimizer-terser": "^2.10.2",

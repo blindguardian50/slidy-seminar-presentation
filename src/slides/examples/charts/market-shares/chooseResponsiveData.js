@@ -8,8 +8,8 @@ const responsiveData = [
 export function chooseResponsiveData(data, element) {
     const index = findMatchingBoundsIndex(element, responsiveData)
     switch (index) {
-        case 0: case 1: data.title = 'Browser Share'; break
-        default: data.title = "Market Share of Browsers"
+        case 0: case 1: data.title = 'Platforms'; break
+        default: data.title = "Market Share of Platforms"
 
     }
     switch (index) {
