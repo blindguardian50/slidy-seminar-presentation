@@ -18,7 +18,10 @@
   "dependencies": {
     "run-script-os": "^1.1.6",
     "chart.js": "^4.3.3",
-    "chartjs-plugin-datalabels": "^2.2.0"
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "chartist": "^1.3.0",
+    "chartist-plugin-axistitle": "^0.0.7",
+    "highcharts": "^11.1.0"
   },
   "devDependencies": {
     "@parcel/optimizer-terser": "^2.10.2",

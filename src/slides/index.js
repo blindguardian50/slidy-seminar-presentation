@@ -8,6 +8,8 @@ import {loadMultiLineChart} from "./examples/charts/electric-power-consumption/e
 import {loadStackedBarChart} from "./examples/charts/market-shares/market-shares-chart";
 import {createChart as createChartjsChart} from "./tools/chartjs/chartjs";
 import {createChart as createPlotlyjsChart} from "./tools/plotlyjs/plotly";
+import {createChart as createChartistChart} from "./tools/chartist/chartist";
+import {createChart} from "./tools/highcharts/highcharts";
 
 function addHTML(selector, html) {
     const container = document.querySelector(selector)
@@ -49,6 +51,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     loadStackedBarChart('#market-shares-chart')
     createChartjsChart('#chartjs-chart')
     createPlotlyjsChart('#plotlyjs-chart')
+    createChartistChart('#chartist-chart')
+    createChart('#highcharts-chart')
 
 
     addClickResizing('#grouped_bar_full_width', () => resizeElement('#grouped_bar_full_width_figure', '30%', '90%'))
