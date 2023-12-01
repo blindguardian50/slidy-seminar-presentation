@@ -39,9 +39,9 @@
       }
     }
   }
-  @container (min-width: 40rem) {
+  @container (min-width: 42.5rem) {
     .grid-long-figure {
-      grid-template-columns: 25rem 1fr;
+      grid-template-columns: 27.5rem 1fr;
     }
   }
 }

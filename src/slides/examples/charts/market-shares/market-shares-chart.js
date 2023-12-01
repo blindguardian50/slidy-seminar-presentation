@@ -40,7 +40,7 @@ const calcData = () => { //data for sufficient space
 
 const data = calcData()
 
-export function loadStackedBarChart(selector) {
+export function createChart(selector) {
     const chart = d3
         .select(selector)
         .append('div')

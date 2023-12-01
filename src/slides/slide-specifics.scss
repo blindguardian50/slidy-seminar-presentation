@@ -70,6 +70,34 @@
   }
 }
 
+.slide-tool-kit-3 {
+  .grid-long-figure-wrapper {
+    @container (min-width: 45rem) {
+      .grid-long-figure {
+        grid-template-columns: 34rem 1fr;
+      }
+    }
+  }
+}
+
+.slide-tool-kit-4 {
+  .grid-long-figure-wrapper {
+    @container (min-width: 45rem) {
+      .grid-long-figure {
+        grid-template-columns: 34rem 1fr;
+      }
+    }
+  }
+}
+
+.slide-tool-system-2 {
+  .column-wide {
+    img {
+      max-height: 15rem;
+    }
+  }
+}
+
 .slide-resources {}
 
 .slide-references {}

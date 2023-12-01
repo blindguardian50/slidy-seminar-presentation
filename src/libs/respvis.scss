@@ -516,20 +516,6 @@
     stroke-width: 1.2;
   }
 
-  .tooltip {
-    opacity: 0;
-    background-color: #fff;
-    border: #000 solid 1px;
-    border-radius: 5px;
-    padding: 0.5em;
-    position: fixed;
-    pointer-events: none;
-  }
-
-  .tooltip.show {
-    opacity: 1;
-  }
-
   .series-point {
     overflow: hidden;
   }
@@ -537,5 +523,40 @@
   .point {
     stroke: #000;
     stroke-width: 1px;
+  }
+}
+
+
+//Global Respvis Styles for elements outside of chart
+
+.tooltip {
+  opacity: 0;
+  background-color: #fff;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  padding: 0.5em;
+  position: fixed;
+  pointer-events: none;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+
+// Custom adaptions
+
+.toolbar .menu .items {
+  font-size: 1em;
+  li {
+    margin: 0;
+    input[type="checkbox"] {
+      display: inline-block;
+    }
+    label {
+      transform: scaleX(1);
+      font-size: 1em;
+      width: auto;
+    }
   }
 }

@@ -34,7 +34,7 @@ const calcData = () => {
     }
 }
 
-export function loadMultiLineChart(selector) {
+export function createChart(selector) {
     const chart = select(selector)
     .append('div')
     .datum(chartWindowLineData(calcData()))

@@ -4,12 +4,13 @@ import ExamplesSlides from 'bundle-text:../slides/examples/examples.html'
 import ToolsSlides from 'bundle-text:../slides/tools/tools.html'
 import OutroSlides from 'bundle-text:../slides/outro/outro.html'
 import GroupedBarWide from 'bundle-text:../images/grouped_bar_wide.svg'
-import {loadMultiLineChart} from "./examples/charts/electric-power-consumption/electric-power-consumption";
-import {loadStackedBarChart} from "./examples/charts/market-shares/market-shares-chart";
+import {createChart as createMultiLineChart} from "./examples/charts/electric-power-consumption/electric-power-consumption";
+import {createChart as createStackedBarChart} from "./examples/charts/market-shares/market-shares-chart";
 import {createChart as createChartjsChart} from "./tools/chartjs/chartjs";
 import {createChart as createPlotlyjsChart} from "./tools/plotlyjs/plotly";
 import {createChart as createChartistChart} from "./tools/chartist/chartist";
-import {createChart} from "./tools/highcharts/highcharts";
+import {createChart as createHighChartsChart} from "./tools/highcharts/highcharts";
+import {createChart as createScatterPlot} from "./examples/charts/sold-cars-germany/sold-cars-germany-chart";
 
 function addHTML(selector, html) {
     const container = document.querySelector(selector)
@@ -47,12 +48,13 @@ function addRangeResizing(selector, onInput) {
 document.addEventListener("DOMContentLoaded", (event) => {
     mergeDocument()
 
-    loadMultiLineChart('#electric-power-consumption')
-    loadStackedBarChart('#market-shares-chart')
+    createMultiLineChart('#electric-power-consumption')
+    createStackedBarChart('#market-shares-chart')
+    createScatterPlot('#sold-cars-germany')
     createChartjsChart('#chartjs-chart')
     createPlotlyjsChart('#plotlyjs-chart')
     createChartistChart('#chartist-chart')
-    createChart('#highcharts-chart')
+    createHighChartsChart('#highcharts-chart')
 
 
     addClickResizing('#grouped_bar_full_width', () => resizeElement('#grouped_bar_full_width_figure', '30%', '90%'))
