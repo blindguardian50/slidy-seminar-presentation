@@ -37,6 +37,7 @@ export function createChart(selector) {
             title: 'Population',
         },
         margin: {
+            t: 50,  // Increase the top margin to not cut off top element label
             b: 150, // Increase the bottom margin to make room for the x-axis tick labels and title
         },
     };

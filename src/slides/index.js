@@ -1,5 +1,6 @@
 import IntroSlides from 'bundle-text:../slides/intro/intro.html'
 import PatternSlides from 'bundle-text:../slides/patterns/patterns.html'
+import SinglePatternSlides from 'bundle-text:../slides/patterns/single_patterns.html'
 import ExamplesSlides from 'bundle-text:../slides/examples/examples.html'
 import ToolsSlides from 'bundle-text:../slides/tools/tools.html'
 import OutroSlides from 'bundle-text:../slides/outro/outro.html'
@@ -11,6 +12,7 @@ import {createChart as createPlotlyjsChart} from "./tools/plotlyjs/plotly";
 import {createChart as createChartistChart} from "./tools/chartist/chartist";
 import {createChart as createHighChartsChart} from "./tools/highcharts/highcharts";
 import {createChart as createScatterPlot} from "./examples/charts/sold-cars-germany/sold-cars-germany-chart";
+import {createChart as createPlatformMarketShareChart} from "./intro/charts/platform-comparison-market-share/platform-comparison-market-share";
 
 function addHTML(selector, html) {
     const container = document.querySelector(selector)
@@ -21,6 +23,7 @@ function addHTML(selector, html) {
 function mergeDocument() {
     addHTML('body',  IntroSlides)
     addHTML('body',  PatternSlides)
+    // addHTML('body',  SinglePatternSlides)
     addHTML('body',  ExamplesSlides)
     addHTML('body',  ToolsSlides)
     addHTML('body',  OutroSlides)
@@ -47,6 +50,8 @@ function addRangeResizing(selector, onInput) {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     mergeDocument()
+
+    createPlatformMarketShareChart('#platform-comparison-market-share')
 
     createMultiLineChart('#electric-power-consumption')
     createStackedBarChart('#market-shares-chart')
