@@ -44,18 +44,31 @@
     }
     .legend .items {
       flex-direction: row;
+      flex-wrap: wrap;
       width: 100%;
       justify-content: space-evenly;
     }
   }
 
   @container (width < 15rem) {
+    .chart {
+      grid-template: auto auto 1fr auto / auto 1fr;
+      grid-template-areas: 'header  header' 'legend legend' 'axis-left draw-area' ' . axis-bottom';
+    }
+
     .point, .axis {
       display: none;
     }
 
     .point:first-of-type, .point:last-of-type {
       display: block;
+    }
+
+    .legend .items {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-evenly;
     }
   }
 }

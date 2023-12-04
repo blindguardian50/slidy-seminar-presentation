@@ -21,6 +21,7 @@ const calcData = () => {
       }
     },
     yAxis: {
+      title: 'Share',
       configureAxis: (a) => a.tickFormat((v) => v + '%')
     },
     markerTooltips: {

@@ -2,6 +2,12 @@
   //display: none;
   font-size: 0.85em;
   container-type: inline-size;
+  .header .title text {
+    font-size: clamp(0.8em, 0.8em + 1cqw ,1.5em);
+  }
+  .axis .title text, .legend .title {
+    font-size: clamp(1em, 1em + 1cqw ,1.5em);
+  }
   .point, .axis-x .tick, .axis-y .tick, .series-label .label {
     display: none;
   }
@@ -35,6 +41,7 @@
     }
     .legend .items {
       flex-direction: row;
+      flex-wrap: wrap;
       width: 100%;
       justify-content: space-evenly;
     }

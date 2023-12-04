@@ -11,7 +11,7 @@ const allPrices = carData.map(entry => entry.price)
 const allMileages = carData.map(entry => entry.mileage)
 
 const baseScaleX = d3.scaleLinear()
-    .domain([0, Math.max(...allHorsePower)])
+    .domain([0, 700])
     .nice()
 const baseScaleY = d3.scaleLinear()
     .domain([0, Math.max(...allPrices)])
@@ -32,15 +32,14 @@ const data = {
     xScale: scales.xScale,
     yValues: prices,
     yScale: scales.yScale,
-    xAxis: { title: 'Price [EU]', configureAxis: (axis) => axis.tickFormat(format('.3d')) },
-    yAxis: { title: 'Horse Power [PS]' },
+    xAxis: { title: 'Horse Power [PS]', configureAxis: (axis) => axis.tickFormat(format('.3d')) },
+    yAxis: { title: 'Price [EU]' },
     title: "Car Characteristics",
     radiuses: {
         radiusDim: mileages,
         scale: scales.radiusScale
     },
     legend: {
-        title: 'Legend',
         keys: [...topMakesNames, "Other"],
         labels: [...topMakesNames, "Other"]
     },
