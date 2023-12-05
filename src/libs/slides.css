@@ -191,7 +191,7 @@ div.small-images img, div.small-images video {
   height: 10em;
 }
 
-figcaption {
+figcaption, .table-caption {
   margin: 1em 0;
   font-size: 60%;
   text-align: center;
@@ -199,19 +199,19 @@ figcaption {
   caption-side: bottom;
 }
 
-figcaption span.fig-label {
+figcaption span.fig-label, .table-caption span.fig-label {
   font-weight: bold;
 }
 
-figcaption span.credit {
+figcaption span.credit, .table-caption span.credit {
   font-size: 80%;
 }
 
-figcaption span.credit:before {
+figcaption span.credit:before, .table-caption span.credit:before {
   content: "[";
 }
 
-figcaption span.credit:after {
+figcaption span.credit:after, .table-caption span.credit:after {
   content: "]";
 }
 

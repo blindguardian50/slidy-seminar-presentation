@@ -45,3 +45,34 @@
     }
   }
 }
+
+
+.grid-table-wrapper {
+  display: grid;
+  align-content: center;
+  .grid-table {
+    display: grid;
+    --cols: 2;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    .header, .row {
+      display: grid;
+      grid-column: span var(--cols);
+      grid-template-columns: subgrid;
+    }
+    .header {
+      margin-bottom: 1rem;
+      border-block: 1px solid black;
+    }
+    .row:nth-child(2n) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    p {
+      display: flex;
+      margin: 0;
+      padding: 0.5em;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
