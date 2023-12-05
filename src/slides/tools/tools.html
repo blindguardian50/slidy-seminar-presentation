@@ -5,7 +5,7 @@
 
 
 <section>
-<h1>Presented Tools</h1>
+<h1>Presented Responsive Visualization Tools</h1>
 <ul>
     <li>Responsive Visualization Toolkits:
         <ul>
@@ -15,7 +15,7 @@
             <li>Highcharts</li>
         </ul>
     </li>
-    <li>Responsive visualization systems:
+    <li>Responsive Visualization Systems:
         <ul>
             <li>Hoffswell Visualization System</li>
             <li>Power BI</li>
@@ -51,13 +51,13 @@
             <li>Evaluation process:
                 <ul>
                     <li>Create bar charts with provided data for all (available) tools</li>
+                    <li>Performance test: Measure frame rate (in fps) while resizing chart for 10 s</li>
                     <li>Conduct performance test with:
                         <ul>
                             <li>7 bars</li>
                             <li>70 bars</li>
                         </ul>
                     </li>
-                    <li>Performance test: Measure frame rate (in fps) while resizing chart for 10 s</li>
                 </ul>
             </li>
         </ul>
@@ -179,16 +179,16 @@
 <div class="grid-long-figure-wrapper">
     <div class="grid-long-figure">
         <ul>
-            <li>Responsive visualization toolkit</li>
-            <li>Lightweight open-source library for creating visualizations via SVGs</li>
-            <li>Offers bar, line and pie charts as well as subtypes and variations</li>
-            <li>Offers a default style sheet</li>
-            <li>Elements can be made highly interactive</li>
-            <li>Titles cannot be added to SVGs (plugin for axis titles exists)</li>
-            <li>Scaling of elements only via container or media queries</li>
-            <li>Library size of minified bundle: 11.7KB</li>
-            <li>Popularity: 13.3K stars on GitHub</li>
-            <li>Performance test: 57FPS with unchanged data, 49FPS with extended data set</li>
+            <li>Lightweight open-source responsive visualization toolkit.</li>
+            <li>Drawing via SVG-DOM (D3).</li>
+            <li>Offers bar, line and pie charts as well as subtypes and variations.</li>
+            <li>Offers a default, customizable style sheet.</li>
+            <li>Event listeners can be attached to individual elements.</li>
+<!--            <li>Titles cannot be added to SVGs (plugin for axis titles exists)</li>-->
+<!--            <li>Scaling of elements only via container or media queries</li>-->
+            <li>Minified bundle 11.7 KB.</li>
+            <li>13.3 K GitHub stars.</li>
+            <li>Performance: 57 fps with 7-bar, 20 fps with 70-bar chart.</li>
         </ul>
         <figure class="figure-tool-resp">
             <!--        <iframe id="iframe-tool3" src="https://responsive-visualization-tools.netlify.app/chartist/" frameborder="0"> </iframe>-->
@@ -213,14 +213,14 @@
             <li>Free for non-commercial and educational purposes.</li>
             <li>Source available, but not open-source.</li>
             <li>Drawing via SVG-DOM.</li>
-            <li>Offers over 50 different visualization types</li>
-            <li>Offers own modules for dashboards, maps, stocks and gantt charts</li>
-            <li>Offers smooth default animations on initial load</li>
-            <li>Elements can be made highly interactive</li>
-            <li>Provides extensive documentation (with AI chatbot)</li>
-            <li>Size of minified bundle: 96.5KB</li>
-            <li>Popularity: 11.5K stars on GitHub</li>
-            <li>Performance test: 56FPS with unchanged data, 52FPS with extended data set</li>
+            <li>Offers over 50 different visualization types.</li>
+            <li>Offers smooth default animations on initial load.</li>
+            <li>Event listeners can be attached to individual elements.</li>
+<!--            <li>Offers own modules for dashboards, maps, stocks and gantt charts</li>-->
+<!--            <li>Provides extensive documentation (with AI chatbot)</li>-->
+            <li>Minified bundle 96.5 KB.</li>
+            <li>11.5 K GitHub stars.</li>
+            <li>Performance: 56 fps with 7-bar, 52 fps with 70-bar chart.</li>
         </ul>
         <figure class="figure-tool-resp">
             <!--        <iframe id="iframe-tool4" src="https://responsive-visualization-tools.netlify.app/highcharts/" frameborder="0"> </iframe>-->
@@ -244,9 +244,11 @@
             <li>Responsive visualization system.</li>
             <li>Tool not publicly available.</li>
             <li>Built with Vega-Lite.</li>
-            <li>Multiple visualization sizes in parallel.</li>
-            <li>Modifications are propagated down.</li>
-            <li><a href="https://jhoffswell.github.io/website/resources/supplemental/responsive-supplemental/index.html" target="_blank">Example gallery</a> contains created visualizations and showcase videos</li>
+            <li>Multiple visualization views in parallel.</li>
+            <li>Modifications are applied to all views by default.</li>
+            <li>Views can be locked or unlocked for propagation.</li>
+            <li>If two views are unlocked, differences are adjustable.</li>
+            <li><a href="https://jhoffswell.github.io/website/resources/supplemental/responsive-supplemental/index.html" target="_blank">Example gallery</a> contains created visualizations and showcase videos.</li>
         </ul>
         <figure class="figure-tool-stat">
             <img src="../../images/tools/hoffswell-vis-system.png" alt="Hoffswell Visualization System"/>
@@ -268,13 +270,13 @@
 <section class="slide-tool-system-2">
 <h1>Power BI</h1>
 <ul>
-    <li>Responsive visualization system</li>
-    <li>Set of services provided by microsoft</li>
-    <li>Enables collecting, analyzing, transforming data</li>
-    <li>Enables creating and collaborative sharing of visualizations and reports</li>
-    <li>Designer can change size of visualization on creation of report and visualization will adapt automatically</li>
-    <li>Different reports for mobile and desktop view can be created</li>
-    <li>Visualizations will not automatically adapt in published reports without further adjustments</li>
+    <li>Responsive visualization system.</li>
+    <li>Set of services provided by microsoft.</li>
+    <li>Enables collecting, analyzing, transforming data.</li>
+    <li>Enables creating and collaborative sharing of visualizations and reports.</li>
+    <li>Visualization will adapt automatically if size is changed during development.</li>
+    <li>Different reports for mobile and desktop view can be created.</li>
+    <li>Visualizations will not automatically adapt in published reports.</li>
 </ul>
 <div class="column-wide">
     <figure>
@@ -309,6 +311,7 @@
             <li>Uses reinforcement-learning-based approach</li>
             <li>Published in IEEE Transactions on Visualization and Computer Graphics 2021</li>
             <li>Tool not publicly available</li>
+            <li>Short <a href="https://ieeexplore.ieee.org/document/9229072/media#media">demo video</a> is available.</li>
         </ul>
         <figure class="figure-tool-stat">
             <img src="../../images/tools/mobile-vis-fixer.png" alt="MobileVisFixer example transformations"/>
@@ -331,18 +334,20 @@
 <div class="grid-long-figure-wrapper">
     <div class="grid-long-figure">
         <ul>
-            <li>Visualization transformation tool</li>
-            <li>Automatically resizes line charts to fit different size requirements</li>
-            <li>Implementation of algorithm via HTML, JavaScript and D3</li>
-            <li>Source code not publicly available</li>
-            <!--        <li>Responsive visualization toolkit</li>-->
-            <!--        <li>Open-source library for creating chart via HTML canvas element</li>-->
-            <!--        <li>Rendering is highly performant even with large number of elements</li>-->
-            <!--        <li>Offers base chart types</li>-->
-            <!--        <li>Library size of minified bundle: 66.6KB</li>-->
-            <!--        <li>Popularity: 62K stars on GitHub</li>-->
-            <!--        <li>Default configuration already leads to appealing results</li>-->
-            <!--        <li>Offers basic interactive features</li>-->
+            <li>Visualization transformation tool.</li>
+            <li>Implementation of algorithm via HTML, JavaScript and D3.</li>
+            <li>Source code not publicly available.</li>
+            <li>Based on cartographic generalization principles.</li>
+            <li>Automatically resizes line charts to fit different size requirements.</li>
+            <li>Algorithm:
+                <ol>
+                    <li>Resize chart.</li>
+                    <li>Identify elements.</li>
+                    <li>Assign semantic importance.</li>
+                    <li>Compute spatial metrics.</li>
+                    <li>Apply generalization.</li>
+                </ol>
+            </li>
         </ul>
         <figure class="figure-tool-stat">
             <img src="../../images/tools/setlur-line-resizer.png" alt="Setlur Line Chart Resizing Example"/>
