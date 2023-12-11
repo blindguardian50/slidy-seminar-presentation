@@ -96,8 +96,12 @@
 
 .slide-tool-system-2 {
   .column-wide {
-    img {
-      max-height: 15rem;
+    align-items: flex-end;
+    #power_bi_large svg {
+      height: 20rem;
+    }
+    #power_bi_small svg {
+      height: 15rem;
     }
   }
 }

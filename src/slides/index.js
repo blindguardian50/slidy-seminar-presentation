@@ -5,6 +5,8 @@ import ExamplesSlides from 'bundle-text:../slides/examples/examples.html'
 import ToolsSlides from 'bundle-text:../slides/tools/tools.html'
 import OutroSlides from 'bundle-text:../slides/outro/outro.html'
 import GroupedBarWide from 'bundle-text:../images/grouped_bar_wide.svg'
+import PowerBiSmall from 'bundle-text:../images/tools/power-bi/power_bi_small.svg'
+import PowerBilarge from 'bundle-text:../images/tools/power-bi/power_bi_large.svg'
 import {createChart as createMultiLineChart} from "./examples/charts/electric-power-consumption/electric-power-consumption";
 import {createChart as createStackedBarChart} from "./examples/charts/market-shares/market-shares-chart";
 import {createChart as createChartjsChart} from "./tools/chartjs/chartjs";
@@ -28,6 +30,8 @@ function mergeDocument() {
     addHTML('body',  ToolsSlides)
     addHTML('body',  OutroSlides)
     addHTML('#grouped_bar_full_width',  GroupedBarWide)
+    addHTML('#power_bi_small',  PowerBiSmall)
+    addHTML('#power_bi_large',  PowerBilarge)
 }
 
 function resizeElement(selector, from, to) {
