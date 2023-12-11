@@ -21,9 +21,6 @@ const calcData = () => { //data for sufficient space
         subcategoryEntity: 'Platforms',
         subcategories: platforms,
         labels: {},
-        legend: {
-            title: 'Platforms'
-        },
         tooltips: (e, { category, subcategory, value }) =>
             `Year: ${category}<br/>Platform: ${subcategory}<br/>Market Share: ${d3.format('.2f')(
                 value

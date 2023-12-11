@@ -8,13 +8,13 @@ const responsiveData = [
 export function chooseResponsiveData(data, element) {
     const index = findMatchingBoundsIndex(element, responsiveData)
     switch (index) {
-        case 0: case 1: data.title = 'Platforms'; break
-        default: data.title = "Market Share of Platforms"
+        case 0: case 1: data.title = 'Device Types'; break
+        default: data.title = "Market Share of Device Types"
 
     }
     switch (index) {
         case 0: case 1: data.legend.title = ''; break
-        default:
+        default: data.legend.title = 'Device Type'
     }
     switch (index) {
         case 0: data.flipped = true; break

@@ -8,7 +8,14 @@
   }
 }
 
-.slide-mobile-web {}
+.slide-mobile-web {
+  figure {
+    height: 85%;
+  }
+  #platform-comparison-market-share, figcaption {
+    //margin-top: 4rem;
+  }
+}
 
 .slide-resp-vis-important {
   --color-categorical-0: #4f8c9d;
@@ -44,7 +51,9 @@
 
 .slide-transition.slide {
   //background-color: #0000;
-  background-image: linear-gradient(#fff 0%, gray 100%);
+  //background-image: linear-gradient(#fff 0%, gray 100%);
+  background-image: linear-gradient(white 0%, #c7c7c7 100%);
+
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: contain;
@@ -95,13 +104,32 @@
 }
 
 .slide-tool-system-2 {
-  .column-wide {
-    align-items: flex-end;
-    #power_bi_large svg {
-      height: 20rem;
+  .grid-long-figure-wrapper {
+    container: tool-system-2-container / inline-size;
+    .grid-long-figure {
+      .figure-tool-stacked {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 10rem;
+        figure {
+          flex-grow: 0;
+          width: auto;
+          #power_bi_large svg {
+            width: 20rem;
+          }
+          #power_bi_small svg {
+            width: 15rem;
+          }
+        }
+      }
     }
-    #power_bi_small svg {
-      height: 15rem;
+    @container (min-width: 55rem) {
+      .grid-long-figure {
+        grid-template-columns: 40rem 1fr;
+        .figure-tool-stacked {
+          flex-direction: column;
+        }
+      }
     }
   }
 }

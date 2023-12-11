@@ -5,3 +5,7 @@
     width: 100%;
     flex-wrap: wrap;
 }
+
+p, a, li {
+    max-width: 70ch;
+}

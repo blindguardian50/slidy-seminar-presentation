@@ -1,5 +1,5 @@
 .grid-long-figure-wrapper {
-  container-type: inline-size;
+  container: long-figure / inline-size;
   .grid-long-figure {
     display: grid;
     gap: 2rem;
@@ -33,13 +33,27 @@
       justify-content: center;
       align-items: center;
       min-height: 75vh;
-      img {
+      img, svg {
         max-width: 100%;
         max-height: 80%;
       }
     }
+    .figure-tool-stacked {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 75vh;
+      figure {
+        width: 100%;
+        img, svg {
+          max-width: 100%;
+          max-height: 80%;
+        }
+      }
+    }
   }
-  @container (min-width: 42.5rem) {
+  @container long-figure (min-width: 42.5rem) {
     .grid-long-figure {
       grid-template-columns: 27.5rem 1fr;
     }
