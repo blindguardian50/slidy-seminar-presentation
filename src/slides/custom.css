@@ -9,3 +9,16 @@
 p, a, li {
     max-width: 70ch;
 }
+
+.thebibliography {
+    padding: 0 0 0 1.5em;
+    text-indent: -1.5em;
+}
+
+.slide {
+    &:after {
+        content: '';
+        min-height: 2rem;
+        background: transparent;
+    }
+}
